@@ -16,10 +16,10 @@ public class TestServlet extends HttpServlet {
         throws ServletException, IOException {
         try {
             Connection connection = DbUtil.getConnection();
+            response.getWriter().println("It works");
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        response.getWriter().println("It works");
     }
 
 
